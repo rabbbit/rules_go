@@ -157,6 +157,7 @@ def emit_compilepkg(
         executable = go.toolchain._builder,
         arguments = [args],
         env = go.env,
+        use_default_shell_env = True,
     )
 
 def _quote_opts(opts):
